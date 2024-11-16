@@ -107,7 +107,7 @@ export function TaskList() {
               <TableHead className="w-[50px]"></TableHead>
               <TableHead>Task</TableHead>
               <TableHead>Priority</TableHead>
-              <TableHead>Created Date</TableHead>
+              <TableHead>Date</TableHead>
               <TableHead className="w-[100px]"></TableHead>
             </TableRow>
           </TableHeader>

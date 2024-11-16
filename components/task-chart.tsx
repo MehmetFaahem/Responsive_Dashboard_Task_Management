@@ -54,8 +54,8 @@ export function TaskChart() {
             Distribution of tasks by priority level
           </CardDescription>
         </CardHeader>
-        <CardContent className="h-[300px]">
-          <ResponsiveContainer width="100%" height="100%" className="relative">
+        <CardContent className="h-[300px] relative">
+          <ResponsiveContainer width="100%" height="100%">
             <PieChart>
               <Pie
                 data={priorityData}
@@ -80,12 +80,12 @@ export function TaskChart() {
               <Tooltip />
               <Legend />
             </PieChart>
-            {priorityData.length === 0 && (
-              <h1 className="text-center text-muted-foreground text-xl font-semibold text-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                No tasks found. Please add some tasks to see the chart.
-              </h1>
-            )}
           </ResponsiveContainer>
+          {priorityData.length === 0 && (
+            <h1 className="text-center text-muted-foreground text-xl font-semibold text-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              No tasks found. Please add some tasks to see the chart.
+            </h1>
+          )}
         </CardContent>
       </Card>
 
@@ -96,8 +96,8 @@ export function TaskChart() {
             Distribution of tasks by completion status
           </CardDescription>
         </CardHeader>
-        <CardContent className="h-[300px]">
-          <ResponsiveContainer width="100%" height="100%" className="relative">
+        <CardContent className="h-[300px] relative">
+          <ResponsiveContainer width="100%" height="100%">
             <PieChart>
               <Pie
                 data={statusData}
@@ -120,12 +120,12 @@ export function TaskChart() {
               <Tooltip />
               <Legend />
             </PieChart>
-            {statusData.length === 0 && (
-              <h1 className="text-center text-muted-foreground text-xl font-semibold text-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                No tasks found. Please add some tasks to see the chart.
-              </h1>
-            )}
           </ResponsiveContainer>
+          {statusData.length === 0 && (
+            <h1 className="text-center text-muted-foreground text-xl font-semibold text-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              No tasks found. Please add some tasks to see the chart.
+            </h1>
+          )}
         </CardContent>
       </Card>
     </div>
